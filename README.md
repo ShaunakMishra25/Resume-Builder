@@ -46,7 +46,7 @@ Create stunning, AI-assisted resumes in seconds. Built with **Next.js**, **Tailw
 
 4. **Open in browser**:
 
-   Visit [Resume-Builder]([https://resume-builder-tau-cyan.vercel.app])
+   Visit [Resume-Builder](https://resume-builder-tau-cyan.vercel.app)
 
 ---
 
