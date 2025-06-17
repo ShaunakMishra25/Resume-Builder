@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Resume Builder
 
-## Getting Started
+Create stunning, AI-assisted resumes in seconds. Built with **Next.js**, **Tailwind CSS**, and designed for simplicity and performance.
 
-First, run the development server:
+![App Screenshot](./public/image.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Features
+
+- ✨ Modern and responsive UI  
+- ⚛️ Built with Next.js App Router  
+- 📂 Data handling with local state  
+- 📄 Ready for export to PDF (future feature)
+
+---
+
+## 🛆 Tech Stack
+
+- [Next.js 14 (App Router)](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- React 18
+
+---
+
+## 🛠️ Getting Started
+
+1. **Clone the repo**:
+
+   ```bash
+   git clone https://github.com/ShaunakMishra25/Resume-Builder.git
+   cd Resume-Builder
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**:
+
+   Visit [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                  # App Router structure
+│   ├── layout.tsx        # Root layout with custom logo
+│   └── page.tsx          # Main entry page
+├── components/           # Form and reusable components
+├── public/               # Static assets (your logo, etc.)
+└── styles/               # Global CSS
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🖼️ Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- To **change the logo**, replace `public/logo.png` with your PNG file.
+- Update theme, fonts, or layout easily via Tailwind classes.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧠 Future Improvements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ✅ Export as PDF / DOCX
+- ✅ AI-powered content suggestions
+- ✅ Form validation & templates
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Made with ❤️ by [Shaunak Mishra](https://github.com/ShaunakMishra25)
