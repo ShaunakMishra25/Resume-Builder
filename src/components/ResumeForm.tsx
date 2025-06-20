@@ -50,33 +50,28 @@ export default function ResumeForm() {
         }));
     };
 
-    const handleDownloadPDF = async () => {
-        if (typeof window !== "undefined" && resumeRef.current) {
-            const html2pdf = require("html2pdf.js");
+    
 
-            const opt: {
-                margin: number | [number, number, number?, number?];
-                filename: string;
-                image: { type: string; quality: number };
-                html2canvas: { scale: number };
-                jsPDF: { unit: string; format: string | number[]; orientation: string };
-            } = {
-                margin: [0.4, 0.4],
-                filename: "resume.pdf",
-                image: { type: "jpeg", quality: 0.98 },
-                html2canvas: { scale: 1.5 },
-                jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
-            };
-
-            html2pdf().set(opt).from(resumeRef.current).save();
-        }
-    };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         handleDownloadPDF();
     };
+    const handleDownloadPDF = async () => {
+  if (typeof window !== "undefined" && resumeRef.current) {
+    const html2pdf = (await import("html2pdf.js")).default;
 
+    const opt = {
+      margin: [0.4, 0.4],
+      filename: "resume.pdf",
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 1.5 },
+      jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf().set(opt).from(resumeRef.current).save();
+  }
+};
     return (
         <div className="min-h-screen flex flex-col md:flex-row items-start justify-center gap-6 bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-600 p-6">
             {/* Form */}
