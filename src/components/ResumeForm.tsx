@@ -139,7 +139,7 @@ export default function ResumeForm() {
             {/* Resume Preview for PDF */}
             <div
                 ref={resumeRef}
-                className="bg-white p-4 text-black max-w-[700px] w-full"
+                className="bg-white p-4 text-black max-w-[700px] w-full rounded-3xl"
                 style={{
                     fontSize: "14px",
                     lineHeight: "1.5",
